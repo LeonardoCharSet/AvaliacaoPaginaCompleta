@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <title>Te conhecendo Melhor!</title>
+        <style>
+            body {
+                background-color: beige;
+            }
+        </style>
+
+
+        <script lang="javascript">
+
+            function exibirMensagem() {
+                var mensagem;
+                var tipo;
+                var mensagemExibida;
+                mensagem = document.getElementById("mensagem");
+                tipo = document.getElementById("tipo");
+                mensagemExibida = tipo.value + ": " + mensagem.value + " , Sinta-se a vontade!";
+                alert(mensagemExibida);
+            }
+
+        </script>
+
+
+    </head>
+    <body>
+        <h1>Conhecendo Você!</h1>
+        <form>
+            Digite o seu nome: <input type="text" name="mensagem" id="mensagem" required/><br>
+            De acordo com suas preferencias, voce é:
+            <select name="tipo" id="tipo">
+                <option>Rockeiro</option>
+                <option>Rockeira</option>
+                <option>Sertanejo</option>
+                <option>Eletronica</option>
+                <option>Eletronico</option>
+                <option>Pagodero</option>
+                <option>Pagodera</option>
+            </select><br>
+            <input type="button" value="Enviar..." onclick="exibirMensagem();"/>
+        </form>
+
+        <h4><a href = "index.html">VOLTAR PARA A PÁGINA PRINCIPAL</a></h4>
+    </body>
+
+</html>
